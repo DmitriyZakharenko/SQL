@@ -1,9 +1,11 @@
+---- SELECT ----
 1. Insert the missing statement to get all the columns from the Customers table.
 SELECT * FROM Customers;
 2. Write a statement that will select the City column from the Customers table.
 SELECT City FROM Customers;
 3. Select all the different values from the Country column in the Customers table.
 SELECT DISTINCT Country FROM Customers;
+---- WHERE (AND, OR, NOT) ----
 4. Select all records where the City column has the value "Berlin".
 SELECT * FROM Customers 
 WHERE Сity = 'Berlin';
@@ -21,6 +23,21 @@ AND PostalCode = 12209;
 SELECT * FROM Customers
 WHERE City = 'Berlin'
 OR City = 'London';
+---- ORDER BY ----
+9. Select all records from the Customers table, sort the result alphabetically by the column City.
+SELECT * FROM Customers
+ORDER BY City;
+10. Select all records from the Customers table, sort the result reversed alphabetically by the column City.
+SELECT * FROM Customers
+ORDER BY City DESC;
+11. Select all records from the Customers table, sort the result alphabetically, first by the column Country, then, by the column City.
+SELECT * FROM Customers
+ORDER BY Country, City;
+---- INSERT INTO ----
+12. Insert a new record in the Customers table.
+INSERT INTO (CustomerName, Address, City, PostalCode, Country)
+VALUES ('Hekkan Burger', 'Gateveien 15', 'Sandnes','4306', 'Norway');
+
 
 
 
